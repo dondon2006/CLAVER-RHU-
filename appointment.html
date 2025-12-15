@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments Management</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-4xl mx-auto bg-white p-8 rounded-xl shadow-2xl border-t-4 border-blue-500">
+        <h1 class="text-4xl font-bold text-blue-800 mb-4">Appointments Management</h1>
+        <p class="text-lg text-gray-600 mb-6">Manage the schedule, check-ins, and consultation status for all patients.</p>
+        
+        <div class="p-4 bg-blue-50 border-l-4 border-blue-400 text-blue-700 rounded-lg">
+            <p class="font-semibold">Current View: Today's Schedule</p>
+            <p class="text-sm">Filter options for future dates, past records, and status (e.g., Pending, Completed) would be implemented here.</p>
+        </div>
+
+        <div class="mt-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Upcoming List</h2>
+            <div class="space-y-3">
+                <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <span class="font-medium">9:00 AM - Juan Dela Cruz</span>
+                    <span class="text-sm text-yellow-600 font-semibold">Pending Check-in</span>
+                </div>
+                <div class="flex justify-between items-center p-4 bg-gray-50 rounded-lg shadow-sm">
+                    <span class="font-medium">9:30 AM - Maria Santos</span>
+                    <span class="text-sm text-green-600 font-semibold">Checked In</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-10">
+            <a href="index.html" class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-xl hover:bg-blue-700 transition duration-150" aria-label="Go back to the Dashboard">
+                &larr; Back to Dashboard
+            </a>
+        </div>
+    </div>
+</body>
+</html>

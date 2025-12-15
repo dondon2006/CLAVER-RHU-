@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule New Appointment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; }
+    </style>
+</head>
+<body class="p-8">
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-2xl border-t-4 border-green-500">
+        <h1 class="text-4xl font-bold text-green-800 mb-6">Schedule New Appointment</h1>
+        
+        <form class="space-y-4">
+            <div>
+                <label for="patient-select" class="block text-sm font-medium text-gray-700">Patient Name / ID</label>
+                <input type="text" id="patient-select" placeholder="Start typing patient name or ID..." class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required aria-required="true">
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label for="appt-date" class="block text-sm font-medium text-gray-700">Date</label>
+                    <input type="date" id="appt-date" class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required aria-required="true">
+                </div>
+                <div>
+                    <label for="appt-time" class="block text-sm font-medium text-gray-700">Time</label>
+                    <input type="time" id="appt-time" class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" required aria-required="true">
+                </div>
+            </div>
+
+            <div>
+                <label for="reason" class="block text-sm font-medium text-gray-700">Reason for Visit</label>
+                <textarea id="reason" rows="3" class="mt-1 w-full p-3 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500" placeholder="e.g., Follow-up for Hypertension, Child Vaccination, etc."></textarea>
+            </div>
+            
+            <button type="submit" class="w-full mt-6 bg-green-600 text-white p-3 rounded-xl font-semibold hover:bg-green-700 transition duration-150" aria-label="Confirm and schedule new appointment">
+                Schedule Appointment
+            </button>
+        </form>
+        
+        <div class="mt-6 text-center">
+            <a href="index.html" class="text-sm text-gray-500 hover:text-gray-700 transition duration-150">Cancel and return to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>
